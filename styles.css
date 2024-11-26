@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #1F1F28;
+    color: #FDF6E3;
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Space between name and navbar */
+    align-items: center; /* Center items vertically */
+    padding: 20px 80px;
+}
+nav {
+    background: transparent; /* No background for minimal design */
+    
+}
+.navbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.navbar li {
+    font-size: 18px;
+    margin-left: 40px; /* Space between nav items */
+}
+.navbar a {
+    text-decoration: none; /* No underline */
+    color: #FDF6E3;
+}
+a:hover {
+    color: #8a8a8a;
+}
+
+.cursor {
+    display: inline-block;
+    width: 15px; /* Width of the cursor */
+    height: 30px; /* Height of the cursor */
+    background-color: #FDF6E3; /* Cursor color */
+    animation: blink 1s steps(1) infinite; /* Blink animation */
+    margin-left: 5px; /* Space between text and cursor */
+    position: relative; /* Position relative for top adjustment */
+    top: 5px; /* Adjust this value as needed for vertical alignment */
+}
+@keyframes blink {
+    50% {
+        opacity: 0; /* Invisible at halfway point */
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-links {
+    display:flex;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    justify-content: space-between; /* Space between name and navbar */
+
+}
+.social-links li {
+    padding:20px;
+}
+.social-links a {
+    text-decoration: none;
+    color: #FDF6E3;
+    font-size: 24px; /* Adjust icon size */
+}
+
+.social-links a:hover {
+    color: #8a8a8a;
+}
